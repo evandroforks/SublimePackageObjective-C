@@ -17,7 +17,8 @@
             { "key": "selector", "operator": "equal", "operand": "(source.objc | source.objc++) & meta.preprocessor.include" }
         ]
     },
-    { "keys": [">"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+    // { "keys": [">"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+    { "keys": [">"], "command": "insert_snippet", "args": {"contents": ">"}, "context":
         [
             { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
             { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
